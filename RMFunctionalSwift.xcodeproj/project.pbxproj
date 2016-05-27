@@ -14,6 +14,8 @@
 		5415E5551CF5831300B741BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5415E5531CF5831300B741BD /* LaunchScreen.storyboard */; };
 		5415E5601CF5831300B741BD /* RMFunctionalSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5415E55F1CF5831300B741BD /* RMFunctionalSwiftTests.swift */; };
 		5415E56B1CF5831300B741BD /* RMFunctionalSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5415E56A1CF5831300B741BD /* RMFunctionalSwiftUITests.swift */; };
+		5415E57D1CF5839800B741BD /* BattleShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5415E57C1CF5839800B741BD /* BattleShip.swift */; };
+		54413CA91CF6FD9B005D9BBC /* CoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54413CA81CF6FD9B005D9BBC /* CoreImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		5415E5661CF5831300B741BD /* RMFunctionalSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMFunctionalSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5415E56A1CF5831300B741BD /* RMFunctionalSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMFunctionalSwiftUITests.swift; sourceTree = "<group>"; };
 		5415E56C1CF5831300B741BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5415E57C1CF5839800B741BD /* BattleShip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleShip.swift; sourceTree = "<group>"; };
+		54413CA81CF6FD9B005D9BBC /* CoreImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			children = (
 				5415E54A1CF5831300B741BD /* AppDelegate.swift */,
 				5415E54C1CF5831300B741BD /* ViewController.swift */,
+				5415E5781CF5835F00B741BD /* RMCommon */,
 				5415E54E1CF5831300B741BD /* Main.storyboard */,
 				5415E5511CF5831300B741BD /* Assets.xcassets */,
 				5415E5531CF5831300B741BD /* LaunchScreen.storyboard */,
@@ -123,6 +128,39 @@
 				5415E56C1CF5831300B741BD /* Info.plist */,
 			);
 			path = RMFunctionalSwiftUITests;
+			sourceTree = "<group>";
+		};
+		5415E5781CF5835F00B741BD /* RMCommon */ = {
+			isa = PBXGroup;
+			children = (
+				5415E5791CF5835F00B741BD /* controller */,
+				5415E57A1CF5835F00B741BD /* model */,
+				5415E57B1CF5835F00B741BD /* view */,
+			);
+			path = RMCommon;
+			sourceTree = "<group>";
+		};
+		5415E5791CF5835F00B741BD /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		5415E57A1CF5835F00B741BD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5415E57C1CF5839800B741BD /* BattleShip.swift */,
+				54413CA81CF6FD9B005D9BBC /* CoreImage.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		5415E57B1CF5835F00B741BD /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5415E57D1CF5839800B741BD /* BattleShip.swift in Sources */,
 				5415E54D1CF5831300B741BD /* ViewController.swift in Sources */,
+				54413CA91CF6FD9B005D9BBC /* CoreImage.swift in Sources */,
 				5415E54B1CF5831300B741BD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,10 +441,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Peng Wang (PDX44H9Z79)";
 				INFOPLIST_FILE = RMFunctionalSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.congcong.RMFunctionalSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c70cd350-99c3-4d95-acd6-f3c2374d122b";
 			};
 			name = Debug;
 		};
@@ -412,10 +454,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Peng Wang (PDX44H9Z79)";
 				INFOPLIST_FILE = RMFunctionalSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.congcong.RMFunctionalSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c70cd350-99c3-4d95-acd6-f3c2374d122b";
 			};
 			name = Release;
 		};
@@ -484,6 +528,7 @@
 				5415E5711CF5831300B741BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5415E5721CF5831300B741BD /* Build configuration list for PBXNativeTarget "RMFunctionalSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +537,7 @@
 				5415E5741CF5831300B741BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5415E5751CF5831300B741BD /* Build configuration list for PBXNativeTarget "RMFunctionalSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +546,7 @@
 				5415E5771CF5831300B741BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
