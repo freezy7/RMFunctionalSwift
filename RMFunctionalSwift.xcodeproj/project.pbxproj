@@ -16,6 +16,8 @@
 		5415E56B1CF5831300B741BD /* RMFunctionalSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5415E56A1CF5831300B741BD /* RMFunctionalSwiftUITests.swift */; };
 		5415E57D1CF5839800B741BD /* BattleShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5415E57C1CF5839800B741BD /* BattleShip.swift */; };
 		54413CA91CF6FD9B005D9BBC /* CoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54413CA81CF6FD9B005D9BBC /* CoreImage.swift */; };
+		5453B4981CFD777800CF9419 /* HighFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5453B4971CFD777800CF9419 /* HighFunction.swift */; };
+		5453B49A1CFD998400CF9419 /* OptionalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5453B4991CFD998400CF9419 /* OptionalValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		5415E56C1CF5831300B741BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5415E57C1CF5839800B741BD /* BattleShip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleShip.swift; sourceTree = "<group>"; };
 		54413CA81CF6FD9B005D9BBC /* CoreImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreImage.swift; sourceTree = "<group>"; };
+		5453B4971CFD777800CF9419 /* HighFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighFunction.swift; sourceTree = "<group>"; };
+		5453B4991CFD998400CF9419 /* OptionalValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,8 @@
 			children = (
 				5415E57C1CF5839800B741BD /* BattleShip.swift */,
 				54413CA81CF6FD9B005D9BBC /* CoreImage.swift */,
+				5453B4971CFD777800CF9419 /* HighFunction.swift */,
+				5453B4991CFD998400CF9419 /* OptionalValue.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -295,6 +301,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5415E57D1CF5839800B741BD /* BattleShip.swift in Sources */,
+				5453B49A1CFD998400CF9419 /* OptionalValue.swift in Sources */,
+				5453B4981CFD777800CF9419 /* HighFunction.swift in Sources */,
 				5415E54D1CF5831300B741BD /* ViewController.swift in Sources */,
 				54413CA91CF6FD9B005D9BBC /* CoreImage.swift in Sources */,
 				5415E54B1CF5831300B741BD /* AppDelegate.swift in Sources */,
