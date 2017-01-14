@@ -32,4 +32,11 @@ extension Character: Arbitary {
     static func arbitrary() -> Character {
         return Character(UnicodeScalar(Int.random(from: 65, to: 90)))
     }
+    
+    
+    
+    
+    
+    
+    
 }
